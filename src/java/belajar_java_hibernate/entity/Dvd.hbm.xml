@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 8, 2017 8:28:12 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="belajar_java_hibernate.entity.Dvd" table="dvd" catalog="belajar_java_hibernate" optimistic-lock="version">
+        <id name="kdDvd" type="string">
+            <column name="kd_dvd" length="11" />
+            <generator class="assigned" />
+        </id>
+        <property name="namaDvd" type="string">
+            <column name="nama_dvd" length="100" />
+        </property>
+        <property name="jenisDvd" type="string">
+            <column name="jenis_dvd" length="30" />
+        </property>
+        <property name="harga" type="java.lang.Long">
+            <column name="harga" />
+        </property>
+    </class>
+</hibernate-mapping>
