@@ -26,6 +26,7 @@ public class HibernateUtil {
         Session sess = (Session) session.get();
         if(sess == null) {
             sess = sessionFactory.openSession();
+            session.set(sess);
         }
         return sess;
     } 
